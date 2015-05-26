@@ -7,7 +7,7 @@ use kartik\icons\Icon;
 Icon::map($this, Icon::FA);
 ?>
 <div id="<?= $idWidget; ?>" class="cropbox">
-    <div class="imageBox">
+    <div class="imageBox" style="display: none">
         <div class="thumbBox"></div>
     </div>
     <p class="message"></p>

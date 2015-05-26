@@ -150,10 +150,10 @@
             }
         },
         clear: function($th) {
-            $th.find('.btnCrop').addClass('disabled');
+            //$th.find('.btnCrop').addClass('disabled');
             $th.find('.btnZoomIn').addClass('disabled');
             $th.find('.btnZoomOut').addClass('disabled');
-            $th.find('.imageBox').hide();
+            //$th.find('.imageBox').hide();
             $th.find('.message').hide();
             $th.find('.resizeWidth').hide();
             $th.find('.resizeHeight').hide();
@@ -228,7 +228,7 @@
                 img         = crop.getDataURL(thumbWidth, thumbHeight),
                 info        = crop.getInfo(thumbWidth, thumbHeight);
 
-            $th.find('.cropped').append($('<img>', {
+            $th.find('.cropped').html($('<img>', {
                 class:  'img-thumbnail',
                 src:    img
             }));    
